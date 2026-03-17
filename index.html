@@ -4,168 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Html Porfolio</title>
+    <title>My CSS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Jess Christopher Gordo</h1>
-        <p>
-            Aspiring Software Engineer | HTML | CSS | JavaScript
-        </p>
-    </header>
-    <hr>
-    <!-- Navigation -->
-    <nav>
-        <a href="#AboutId">About</a> |
-        <a href="#SkillsId">Skills</a> |
-        <a href="#ProjectsId">Projects</a> |
-        <a href="#ContactId">Contact</a> |
+    <!-- Theme Toggle Hack -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle" autocomplete="off">
+    <label for="theme-toggle" class="theme-switch">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </label>
 
-    </nav>
-    <!-- Main-->
-    <main>
-        <!-- About section -->
-        <section id="AboutId">
-            <h2>About Me</h2>
-            <img width="150" src="./images/WIN_20260120_20_12_06_Pro.jpg" alt="Blind but good">
-            <p>
-                Hello! I'm Jess Christopher Gordo, an aspiring software engineer with a passion for web development.
-                I specialize in HTML, CSS, and JavaScript, and I'm eager to create engaging and user-friendly websites.
-            </p>
-        </section>
-        <hr>
-        <!-- Skills Section -->
-        <section id="SkillsId">
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">JC.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <hr>
+        </nav>
 
-        <!-- Projects Section -->
-        <section id="ProjectsId">
-            <h3>Projects</h3>
-            <article>
-                <h4>First Project</h4>
-                <p>Simple HTML Project</p>
-                <a href="#">View Point</a>
-            </article>
-        </section>
-        <hr>
+        <!-- Main Content -->
+        <main>
+            <!-- Hero / About Section -->
+            <section id="about" class="hero-section">
+                <div class="hero-content">
+                    <h1>Jess Christopher Gordo</h1>
+                    <h2>Aspiring Software Engineer</h2>
+                    <p>Hello! I'm an aspiring software engineer with a passion for web development. I specialize in
+                        HTML, CSS, and JavaScript, and I'm eager to create engaging and user-friendly websites.</p>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/WIN_20260120_20_12_06_Pro.jpg" alt="Jess Christopher Gordo">
+                </div>
+            </section>
 
-        <!-- IT Portal Iframe Section -->
-        <section id="ProjectsId">
-            <h3>IT Portal Iframe</h3>
-            <article>
-                <h4>Second Projects</h4>
-                <p>Simple IT Portal Iframe</p>
-                <a href="https://github.com/J3SS25/html__it_portal_iframe_JC_Gordo" target="_blank">View Link</a>
-                <a href="https://html-it-portal-iframe-jc-gordo.vercel.app/" target="_blank">View Live</a>
-            </article>
-        </section>
-        <hr>
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <h3 class="section-title">My Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-card">HTML5</div>
+                    <div class="skill-card">CSS3</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">Responsive Design</div>
+                    <div class="skill-card">Git & GitHub</div>
+                </div>
+            </section>
 
-        <!-- User Account Creation Section -->
-        <section id="ProjectsId">
-            <h3>User Account Creation</h3>
-            <article>
-                <h4>Third Projects</h4>
-                <p>Simple user account creation</p>
-                <a href="https://github.com/J3SS25/html-user-account-creation-from-JC-Gordo" target="_blank">View
-                    Link</a>
-                <a href="https://html-user-account-creation-from-jc.vercel.app/" target="_blank">View Live</a>
-            </article>
-        </section>
-        <hr>
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <h3 class="section-title">My Projects</h3>
+                <div class="projects-grid">
 
-        <!-- IT Student Schedule Section -->
-        <section id="ProjectsId">
-            <h3>IT Student Schedule</h3>
-            <article>
-                <h4>Forth Projects</h4>
-                <p>Simple IT student schedule</p>
-                <a href="https://github.com/J3SS25/html-IT-student-scedule-JC-Gordo" target="_blank">View Link</a>
-                <a href="https://html-it-project-demo-jc-gordo.vercel.app/">View Live</a>
-            </article>
-        </section>
-        <hr>
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>IT Portal Iframe</h4>
+                            <p>Simple IT Portal Iframe project utilizing nested frame layouts.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/J3SS25/html__it_portal_iframe_JC_Gordo" target="_blank"
+                                    class="btn btn-outline">View Code</a>
+                                <a href="https://html-it-portal-iframe-jc-gordo.vercel.app/" target="_blank"
+                                    class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <!-- Student Registration Form Section -->
-        <section id="ProjectsId">
-            <h3>Student Registration Form</h3>
-            <article>
-                <h4>Fifth Projects</h4>
-                <p>Simple student registration form</p>
-                <a href="https://github.com/J3SS25/html-student-registration-form-JC-Gordo" target="_blank">View
-                    Link</a>
-                <a href="https://html-student-registration-form-jc-g.vercel.app/" target="_blank">View Live</a>
-            </article>
-        </section>
-        <hr>
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>User Account Creation</h4>
+                            <p>A simple user account creation form exploring HTML form elements and validation.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/J3SS25/html-user-account-creation-from-JC-Gordo"
+                                    target="_blank" class="btn btn-outline">View Code</a>
+                                <a href="https://html-user-account-creation-from-jc.vercel.app/" target="_blank"
+                                    class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <!-- IT Project Demo Section -->
-        <section id="ProjectsId">
-            <h3>IT Project Demo </h3>
-            <article>
-                <h4>Sixth Projects</h4>
-                <p></p>
-                <a href="https://github.com/J3SS25/html-IT-project-demo-JC-Gordo" target="_blank">View Link</a>
-                <a href="https://html-it-project-demo-jc-gordo.vercel.app/" target="_blank">View Live</a>
-            </article>
-        </section>
-        <hr>
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>IT Student Schedule</h4>
+                            <p>A structured IT student schedule using HTML tables for data organization.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/J3SS25/html-IT-student-scedule-JC-Gordo" target="_blank"
+                                    class="btn btn-outline">View Code</a>
+                                <a href="https://html-it-project-demo-jc-gordo.vercel.app/" target="_blank"
+                                    class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <!-- Study Playlist Section -->
-        <section id="ProjectsId">
-            <h3>Study Playlist</h3>
-            <article>
-                <h4>Seventh Projects</h4>
-                <p></p>
-                <a href="https://github.com/J3SS25/html-Study-playlist-JC-Gordo" target="_blank">View Link</a>
-                <a href="https://html-study-playlist-jc-gordo.vercel.app/" target="_blank">View Live</a>
-            </article>
-        </section>
-        <hr>
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Student Registration Form</h4>
+                            <p>Comprehensive student registration form implementation.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/J3SS25/html-student-registration-form-JC-Gordo"
+                                    target="_blank" class="btn btn-outline">View Code</a>
+                                <a href="https://html-student-registration-form-jc-g.vercel.app/" target="_blank"
+                                    class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <!-- Additional -->
-        <section id="ProjectsId">
-            <h3>FreeCodeCamp Certificate</h3>
-            <article>
-                <h4>Certificate</h4>
-                <p></p>
-                <a href="" target="_blank">View Link</a>
-                <a href="" target="_blank">View Live</a>
-            </article>
-        </section>
-        <hr>
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Study Playlist</h4>
+                            <p>An HTML structured layout showcasing a curated study playlist interface.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/J3SS25/html-Study-playlist-JC-Gordo" target="_blank"
+                                    class="btn btn-outline">View Code</a>
+                                <a href="https://html-study-playlist-jc-gordo.vercel.app/" target="_blank"
+                                    class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
+                </div>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="ContactId">
-            <h3>My Contact</h3>
-            <p>Email:
-                Mobile Number:
-                <strong>09392862175</strong>
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="contact-box">
+                    <h3 class="section-title">Get In Touch</h3>
+                    <p>Interested in working together? Feel free to reach out!</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞 Mobile:</span>
+                            <strong>09392862175</strong>
+                        </div>
+                        <div class="contact-item">
+                            <span>✉️ Email:</span>
+                            <strong><a
+                                    href="mailto:gordojesschritopher41@gmail.com">gordojesschritopher41@gmail.com</a></strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-            </p>
-            <p>
-                Email:
-                <strong>
-                    <a href="mailto: gordojesschritopher41@gmail.com">gordojesschritopher41@gmail.com</a>
-            </p>
-        </section>
-
-
-
-    </main>
-    <hr>
-    <footer>
-        &copy; 2026 Jess Christopher Gordo
-    </footer>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Jess Christopher Gordo. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
