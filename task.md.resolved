@@ -1,0 +1,16 @@
+# Portfolio CSS Styling
+
+- [ ] Create `my-css-portfolio` directory and copy assets/HTML from `my_html_porfolio`
+- [ ] Refactor [index.html](file:///c:/Users/USER/Documents/GitHub/my_html_porfolio/index.html) structure
+  - [ ] Add dark mode toggle checkbox
+  - [ ] Combine all project articles into a single project section container
+  - [ ] Update link text to "View Code" and "Live Demo"
+- [ ] Create `style.css`
+  - [ ] Implement base styling and CSS variables for light/dark themes
+  - [ ] Implement layout (Header, About, Skills, Contact)
+  - [ ] Implement project cards grid
+  - [ ] Implement responsive media queries
+- [ ] Verify functionality
+  - [ ] Test dark mode toggle behavior
+  - [ ] Test responsiveness
+- [ ] Provide instructions for Vercel deployment

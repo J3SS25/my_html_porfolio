@@ -1,0 +1,32 @@
+# Portfolio CSS Integration Plan
+
+The goal is to style the existing HTML portfolio, add a pure CSS dark mode toggle, adjust the structure to support responsive project cards, and prepare the project in a new folder/repository named `my-css-portfolio` for Vercel deployment.
+
+## User Review Required
+None of these changes are breaking, but review is required to ensure the design direction (pure HTML/CSS, "Checkbox Hack" for dark mode) matches expectations before proceeding.
+
+## Proposed Changes
+
+### Setup and Configuration
+- **Create New Directory**: I will copy your files to a new directory called `c:\Users\USER\Documents\GitHub\my-css-portfolio` as required by the activity guidelines. 
+
+### HTML Refactoring
+#### [MODIFY] [index.html](file:///c:/Users/USER/Documents/GitHub/my_html_porfolio/index.html)
+- **Dark Mode Checkbox**: Insert `<input type="checkbox" id="dark-mode" class="dark-mode-checkbox">` and its `<label>` at the top of the body.
+- **Structure Cleanup**: 
+    - Wrap the main content in a `.app-container` so the checkbox hack can easily target and change CSS variables for the whole page.
+    - Fix the `.projects-container` so that instead of multiple `<section id="ProjectsId">`, there is one `<section id="projects">` containing a CSS Grid or Flexbox of `<article class="project-card">`s.
+- **Link Text**: Change links to say "View Code" (for GitHub) and "Live Demo" (for Vercel).
+
+### Style Implementation
+#### [NEW] `style.css`
+- **Variables**: Define `--bg-color`, `--text-color`, `--card-bg`, `--accent-color` on `:root` and change them on `.dark-mode-checkbox:checked ~ .app-container`.
+- **Layout**: Implement a clean, responsive layout loosely inspired by modern design principles with rich aesthetics.
+- **Cards**: Style projects as cards with hover effects.
+- **Responsiveness**: Use `@media` queries to ensure mobile-friendliness.
+
+## Verification Plan
+
+### Manual Verification
+- You can test the newly designed layout and the dark mode switch by opening `c:\Users\USER\Documents\GitHub\my-css-portfolio\index.html` in your browser.
+- Once completed, I will provide the steps required for you to host it live on Vercel.
